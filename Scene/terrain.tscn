@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl2ihq0nb4geh"]
+
+[ext_resource type="PackedScene" uid="uid://jk7celicyuay" path="res://Scene/floor.tscn" id="1_2dc63"]
+[ext_resource type="PackedScene" uid="uid://w2psdilptkje" path="res://Scene/wall.tscn" id="2_vcsj8"]
+
+[node name="Terrain" type="Node2D"]
+
+[node name="Floor" parent="." instance=ExtResource("1_2dc63")]
+
+[node name="Wall" parent="." instance=ExtResource("2_vcsj8")]
+
+[node name="Wall2" parent="." instance=ExtResource("2_vcsj8")]
+position = Vector2(565, 0)
+
+[node name="Wall3" parent="." instance=ExtResource("2_vcsj8")]
+position = Vector2(565, -78)
+rotation = 1.5708

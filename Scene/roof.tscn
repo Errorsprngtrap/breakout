@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3imbffm7d6un"]
+
+[ext_resource type="Script" uid="uid://2qa66jvef2wm" path="res://Script/roof.gd" id="1_ubcfp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i51fj"]
+size = Vector2(587, 22)
+
+[node name="Roof" type="Area2D"]
+script = ExtResource("1_ubcfp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(282.5, 1)
+shape = SubResource("RectangleShape2D_i51fj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

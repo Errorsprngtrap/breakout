@@ -1,0 +1,11 @@
+[gd_resource type="Theme" format=3 uid="uid://cdduukpv33v5"]
+
+[resource]
+Button/constants/outline_size = 10
+Button/font_sizes/font_size = 30
+Label/colors/font_shadow_color = Color(0, 0, 0, 0.0862745)
+Label/constants/outline_size = 10
+Label/constants/shadow_offset_x = -5
+Label/constants/shadow_offset_y = 10
+Label/constants/shadow_outline_size = 10
+Label/font_sizes/font_size = 25

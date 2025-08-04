@@ -1,0 +1,36 @@
+[gd_scene load_steps=9 format=3 uid="uid://bmu831m78soym"]
+
+[ext_resource type="Script" uid="uid://c5am8u0cn26kc" path="res://Script/main_game.gd" id="1_htkpn"]
+[ext_resource type="PackedScene" uid="uid://dl2ihq0nb4geh" path="res://Scene/terrain.tscn" id="1_jv8gs"]
+[ext_resource type="PackedScene" uid="uid://bi54mfoms5als" path="res://Scene/ball.tscn" id="2_1btii"]
+[ext_resource type="PackedScene" uid="uid://iv6knrgl7fm1" path="res://Scene/paddle.tscn" id="2_vh4eo"]
+[ext_resource type="PackedScene" uid="uid://dm83o8i0w1gpk" path="res://Scene/1_up.tscn" id="3_ed23l"]
+[ext_resource type="PackedScene" uid="uid://dddgweuth0ffy" path="res://Scene/hud.tscn" id="5_44mwd"]
+[ext_resource type="PackedScene" uid="uid://d3imbffm7d6un" path="res://Scene/roof.tscn" id="6_qy5om"]
+[ext_resource type="AudioStream" uid="uid://bcy0pdtq2brh2" path="res://sound/theme.wav" id="8_yxby3"]
+
+[node name="Main_Game" type="Node2D"]
+script = ExtResource("1_htkpn")
+BallScene = ExtResource("2_1btii")
+lifeobj = ExtResource("3_ed23l")
+
+[node name="HUD" parent="." instance=ExtResource("5_44mwd")]
+
+[node name="Terrain" parent="." instance=ExtResource("1_jv8gs")]
+position = Vector2(0, 155)
+
+[node name="Paddle" parent="." instance=ExtResource("2_vh4eo")]
+position = Vector2(288, 750)
+
+[node name="BallSpawn" type="Marker2D" parent="."]
+position = Vector2(288, 580)
+
+[node name="BrickSpawn" type="Marker2D" parent="."]
+position = Vector2(11, 450)
+
+[node name="Roof" parent="." instance=ExtResource("6_qy5om")]
+position = Vector2(0, 98)
+
+[node name="Theme" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_yxby3")
+autoplay = true

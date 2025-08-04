@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://jk7celicyuay"]
+
+[ext_resource type="Script" uid="uid://bskuada6rc6vl" path="res://Script/floor.gd" id="1_cflpq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vp5ev"]
+size = Vector2(576, 87)
+
+[node name="Floor" type="Area2D"]
+script = ExtResource("1_cflpq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(288, 691.5)
+shape = SubResource("RectangleShape2D_vp5ev")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

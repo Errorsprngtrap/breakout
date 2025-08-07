@@ -18,5 +18,5 @@ func _physics_process(delta: float) -> void:
 		collide.play()
 		if collide_move.get_collider().has_meta("brick") :
 			collide_move.get_collider().touched()
-		velocity *= 1.01
+		velocity *= 1.025
 		velocity = velocity.bounce(collide_move.get_normal())

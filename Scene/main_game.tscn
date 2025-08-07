@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dm83o8i0w1gpk" path="res://Scene/1_up.tscn" id="3_ed23l"]
 [ext_resource type="PackedScene" uid="uid://dddgweuth0ffy" path="res://Scene/hud.tscn" id="5_44mwd"]
 [ext_resource type="PackedScene" uid="uid://d3imbffm7d6un" path="res://Scene/roof.tscn" id="6_qy5om"]
-[ext_resource type="AudioStream" uid="uid://bcy0pdtq2brh2" path="res://sound/theme.wav" id="8_yxby3"]
+[ext_resource type="AudioStream" uid="uid://b6cfpvkhjsbc3" path="res://sound/theme.wav" id="8_yxby3"]
 
 [node name="Main_Game" type="Node2D"]
 script = ExtResource("1_htkpn")
